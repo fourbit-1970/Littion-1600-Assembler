@@ -36,14 +36,15 @@ The assembly file format is as follows:
 
 **Example: assembly**
 
-__Location        Symbolic Code   Partial Address__
-* $000:        &emsp;RK TP CIE               &emsp;$01            &emsp;; Test case from manual
-* $001:        &emsp;AC+14A  JC+fff          &emsp;$02            &emsp;; Add with Cary and Jump conditional
-* $020:        &emsp;LA+7  NN  RK  SK        &emsp;$03            &emsp;; Test case with 4 opcodes
+|Location     |   Symbolic Code  | Partial Address|      Comments      |
+| :----:      | :----:      | :----:      | :----      |
+|$000:       | &ensp;RK TP CIE          | &ensp;$01       |  &ensp;; Test case from manual |
+|$001:       | &ensp;AC+14A  JC+fff     | &ensp;$02       |  &ensp;; Add with Cary and Jump conditional |
+|$020:       | &ensp;LA+7  NN  RK  SK   | &ensp;$03       |  &ensp;; Test case with 4 opcodes |
 
 ## Command-Line Options
 
-    python Assembler.py <filename.asm> [-s]
+   > python Assembler.py <filename.asm> [-s]
 
 *   <filename.asm>: The name of the assembly file to assemble. This is a required argument.
 *   -s or --suppress: An optional flag to suppress the formatted output to the console.
