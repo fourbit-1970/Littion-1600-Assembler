@@ -43,8 +43,9 @@ The assembly file format is as follows:
 |$020:       | &ensp;LA+7  NN  RK  SK   | &ensp;$03       |  &ensp;; Test case with 4 opcodes |
 
 ## Command-Line Options
-
-   > python Assembler.py <filename.asm> [-s]
+```
+    python Assembler.py <filename.asm> [-s]
+```
 
 *   <filename.asm>: The name of the assembly file to assemble. This is a required argument.
 *   -s or --suppress: An optional flag to suppress the formatted output to the console.
