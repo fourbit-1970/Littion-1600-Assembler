@@ -37,9 +37,9 @@ The assembly file format is as follows:
 **Example: assembly**
 
 __Location        Symbolic Code   Partial Address__
-* $000:         RK TP CIE             $01             ; Test case from manual
-* $001:         AC+14A  JC+fff        $02             ; Add with Cary and Jump conditional
-* $020:         LA+7  NN  RK  SK      $03             ; Test case with 4 opcodes
+* $000:        RK TP CIE               $01            ; Test case from manual
+* $001:        AC+14A  JC+fff          $02            ; Add with Cary and Jump conditional
+* $020:        LA+7  NN  RK  SK        $03            ; Test case with 4 opcodes
 
 ## Command-Line Options
 
