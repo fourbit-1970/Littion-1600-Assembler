@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Littion 1601 Assembler
 
 ## Project Description
@@ -10,6 +11,16 @@ The assembler takes assembly code as input and generates an object file (`.obj`)
 
 This assembler is purpose built for use in creating short diagnostic programs. As such it is not a complete implementation for general use. For example, LABELS are partially implemented but are of little use without the assembler directive to assign values. Instruction word locations must be manually specified, as does the partial address for each instruction jump. I have future plans to modify this code to be more general purpose. For now the implemented functionality is all that is needed.
 
+=======
+## Littion 1601 Assembler
+
+## Project Description
+
+This is a personal project to create an assembler for the Littion 1601 computer. The Litton 1600 is a drum-base 40-bit serial computer from the 1960s. This assembler will be used in the process of creating testing programs for the gate-accurate recreation of the Littion 1600 logic.
+
+The assembler takes assembly code as input and generates an object file (`.obj`) that can be loaded into a Littion 1601 simulator. It also generates a listing file (`.lst`) for debugging purposes.
+
+>>>>>>> a45185f7753d1689d0631e641d5fd5b96a241c60
 ## Features
 
 *   Parses Littion 1600 series assembly code.
@@ -33,8 +44,13 @@ This assembler is purpose built for use in creating short diagnostic programs. A
 The assembly file format is as follows:
 
 *   **Labels:** Labels are used to specify the address of an instruction word. They can be either hexadecimal (starting with `$`, e.g., `$0A:`) or decimal (e.g., `10:`).
+<<<<<<< HEAD
 *   **Opcodes:** Opcodes are the instructions (e.g., `AC`, `RK`, `JC`). Opcodes are separated by spaces.
 *   **Operands:** Operands are the data used by the opcodes (e.g., `14A`, `fff`). Operands are separated by spaces.
+=======
+*   **Opcodes:** Opcodes are the instructions (e.g., `AC`, `RK`, `JC`).
+*   **Operands:** Operands are the data used by the opcodes (e.g., `14A`, `fff`).
+>>>>>>> a45185f7753d1689d0631e641d5fd5b96a241c60
 *   **Comments:** Comments start with a semicolon (`;`).
 *   **Next Address:** The next address is optional and is specified at the end of the line, starting with `$` (e.g., `$01`). If not specified, the assembler will calculate the next sequential address.
 
@@ -48,14 +64,24 @@ The assembly file format is as follows:
 
 ## Command-Line Options
 ```
+<<<<<<< HEAD
    python Assembler.py <filename.asm> [-s]
 ```
+=======
+    python Assembler.py <filename.asm> [-s]
+```
+
+>>>>>>> a45185f7753d1689d0631e641d5fd5b96a241c60
 *   <filename.asm>: The name of the assembly file to assemble. This is a required argument.
 *   -s or --suppress: An optional flag to suppress the formatted output to the console.
 
 ## output Files
 
+<<<<<<< HEAD
 *   obj: An object file containing the assembled code in the format address:instruction (e.g., $00:01584000140013). The object file is in hex. This file can be loaded into the Littion 1601 simulator.
+=======
+*   obj: An object file containing the assembled code in the format address:instruction (e.g., $00:01584000140013). This file can be loaded into the Littion 1601 simulator.
+>>>>>>> a45185f7753d1689d0631e641d5fd5b96a241c60
 *   lst: A listing file containing the formatted output that is normally displayed on the console. This file is useful for debugging.
 
 ## Error Handling
@@ -65,7 +91,11 @@ The assembler reports errors and warnings to the console. Errors will prevent th
 ## Future Enhancements
 
 * Command timing-based next address optimization (calculate sum of command execution time to optomize next address).
+<<<<<<< HEAD
 * Add Assembler directives. Example: (e.g., ORG, EQU, DB, DW).
+=======
+* Add Assembler directives. 
+>>>>>>> a45185f7753d1689d0631e641d5fd5b96a241c60
 * Improve listing output (add command timming information, modify format for readability, etc)
 
 ## License
